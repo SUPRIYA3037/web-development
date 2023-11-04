@@ -1,54 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Calculator</title>
-        <link rel="stylesheet" href="./style.css">
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    </head>
-    <body>
-        <div class="container">
-            <div class="heading">
-                <h1>
-                    Calculator
-                </h1>
-                <p>
-                    A simple calculator made with HTML, CSS and JavaScript.
-                </p>
-            </div>
-            <div class="calculator">
-                <input type="text" id="display" disabled>
-                <div class="buttons">
-                    <button onclick="appendNumber('7')">7</button>
-                    <button onclick="appendNumber('8')">8</button>
-                    <button onclick="appendNumber('9')">9</button>
-                    <button class="operation" onclick="appendOperator('/')">÷</button>
-                    <button onclick="appendNumber('4')">4</button>
-                    <button onclick="appendNumber('5')">5</button>
-                    <button onclick="appendNumber('6')">6</button>
-                    <button class="operation" onclick="appendOperator('*')">
-                        <ion-icon name="close-outline"></ion-icon>
-                    </button>
-                    <button onclick="appendNumber('1')">1</button>
-                    <button onclick="appendNumber('2')">2</button>
-                    <button onclick="appendNumber('3')">3</button>
-                    <button class="operation" onclick="appendOperator('-')">-</button>
-                    <button></button>
-                    <button onclick="appendNumber('0')">0</button>
-                    <button onclick="appendDecimal('.')">.</button>
-                    <button class="operation" onclick="appendOperator('+')">+</button>
-                    <button class="operator" onclick="backspace()">
-                        <ion-icon name="backspace-outline"></ion-icon>
-                    </button>
-                    <button class="operator" onclick="clearDisplay()">C</button>
-                    <button class="operator equal" onclick="calculate()">=</button>
-                </div>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supriya Kandati</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./static/images/programming.png">
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="brand-title"><a href="./index.html">Personal Portfolio</a></div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
         </div>
+      </nav>
+      <div class="main">
+        <div class="container">
+          <div class="intro">
+            <!-- <div class="pic2"><img src="./static/images/ekas.jpeg" alt="" srcset=""></div> -->
+            <div class="pic-box  pic-box2">
+              <a href="./contact.html">
+                <div class="pic">
+                  <img src="./static/images/mypic.png" alt="" srcset="">
+                  <div class="middle">
+                    <div class="text">Contact Me</div>
+                  </div>
+                </div>
+              </a>
+            </div>  
+            <h1>Hi,I am supriya.</h1>
+              <div class="gap"></div>
+              <div>
+                <a href="C:\Users\madhu\Downloads\supriya resume.docx" target="_blank" class="neon-button">My Resume</a>
+                <div class="gap"></div>
+                <div class="gap"></div>
+              </div>
+          </div>
+            <!-- <canvas class="pic"></canvas> -->
+          <div class="pic-box">
+            <a href="./contact.html">
+              <div class="pic">
+                <img src="./static/images/mypic.png" alt="" srcset="">
+                <div class="middle">
+                  <div class="text">Contact Me</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+       
+        <div class="gap"></div><div class="gap"></div>
+        <div class="glitch">
+            Education
+        </div>
+        <div class="wrapper">
+            <div class="center-line">
+              <a href="#" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
+            </div>
+            <div class="row row-1">
+              <section>
+                <i class="icon fas fa-home"></i>
+                <div class="details">
+                  <span class="title">10th Grade</span>
+                  <span>2018-2019</span>
+                </div>
+                <p>z.p.h.s utukur</p>
+                <div class="bottom">
+                  <!-- <a href="./static/pdfs/10th marksheet.pdf" target="_blank">Marksheet</a> -->
+                  <i>- 88%</i>
+                </div>
+              </section>
+            </div>
+            <div class="row row-2">
+              <section>
+                <i class="icon fas fa-star"></i>
+                <div class="details">
+                  <span class="title">12th Grade</span>
+                  <span>2019-2021</span>
+                </div>
+                <p>Sri chaitanya jr collage,dhanalakshmipuram,Nellore.</p>
+                <div class="bottom">
+                    <!-- <a href="./static/pdfs/12th marksheet.pdf" target="_blank">Marksheet</a> -->
+                  <i>- 92%</i>
+                </div>
+              </section>
+            </div>
+            <div class="row row-1">
+              <section>
+                <i class="icon fas fa-rocket"></i>
+                <div class="details">
+                  <span class="title">B TECH</span>
+                  <span>2021-2025</span>
+                </div>
+                <p>N.B.K.R.Institute of science&Technology</p>
+                <div class="bottom">
+                    <!-- <a href="https://www.ipuranklist.com/student/03313202720" target="_blank">Marksheet</a> -->
+                  <i>- 8.92%</i>
+                </div>
+              </section>
+            </div>
+            <!-- <div class="row row-2">
+              <section>
+                <i class="icon fas fa-globe"></i>
+                <div class="details">
+                  <span class="title">Title of Section 4</span>
+                  <span>4th Jan 2021</span>
+                </div>
+                <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
+                <div class="bottom">
+                  <a href="#">Read more</a>
+                  <i>- Someone famous</i>
+                </div>
+              </section>
+            </div>
+            <div class="row row-1">
+              <section>
+                <i class="icon fas fa-paper-plane"></i>
+                <div class="details">
+                  <span class="title">Title of Section 5</span>
+                  <span>5th Jan 2021</span>
+                </div>
+                <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
+                <div class="bottom">
+                  <a href="#">Read more</a>
+                  <i>- Someone famous</i>
+                </div>
+              </section>
+            </div>
+            <div class="row row-2">
+              <section>
+                <i class="icon fas fa-map-marker-alt"></i>
+                <div class="details">
+                  <span class="title">Title of Section 6</span>
+                  <span>6th Jan 2021</span>
+                </div>
+                <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
+                <div class="bottom">
+                  <a href="#">Read more</a>
+                  <i>- Someone famous</i>
+                </div>
+              </section>
+            </div>
+          </div> -->    
+        </div>
+        <div class="gap"></div>
+        <div class="glitch">Contact Me</div>
+        
+        <div class="contact">
+
+          <div class="container" style="display: block;">
+            <div class="contact-back">
+  
+              <form action="https://formsubmit.co/ekaspreet99@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="https://ekaspreetsingh.github.io/portfolio/thankyou.html">
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subject:</label>
+                  <input name="_subject" value="">
+                </div>
+                <div class="form-group">
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+              </form>
+            </div>
+            <div class="gap"></div>
+            <p>Feel free to reach out through any of the channels below:</p>
+            <div class="contact-info">
+              <p><i class="fas fa-envelope"></i> Email: <a href="supriyakandati789@gmail.com">supriyakandati789@gmail.com</a></p>
+              <p><i class="fas fa-phone"></i> Phone: <a href="+91 9492677123">+91 9492677123</a></p>
+              <p><i class="fas fa-map-marker-alt"></i> Address: <span style="color: var(--green)">utukur,vidavalur,s.p.s.r. Nellore, India</span></p>
+            </div>
+            <div class="social-media">
+              <p>My social media:</p>
+              <ul>
+                <li><a href="https://www.linkedin.com/in/ekaspreet-singh-a979bb195/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/EkaspreetSingh" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.instagram.com/singh_ekaspreet/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- <div class="hire-me">
+            <h1>com'on now, hire me</h1>
+            <img src="./static/images/gun.png" alt="" srcset="">
+          </div> -->
+
+        </div>
+
+
+
+
     </div>
-</div>
-<script src="script.js"></script>
-</body>
+      <script src="script.js"></script>  
+    </body>
+    <footer>
+        <p>
+            Copyright &#169; Supriya Kandati
+        </p>
+    </footer>
 </html>
